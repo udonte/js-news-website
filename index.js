@@ -15,8 +15,8 @@ const backupImage = `https://images.unsplash.com/photo-1495020689067-958852a7765
 async function dataRequest(url) {
   try {
     const response = await fetch(baseUrl + url + apiKey);
-    return await response.json();
-    const data = response.json;
+    const jsonData = response.json();
+    return jsonData;
   } catch (error) {
     console.log(error);
   }
